@@ -44,7 +44,8 @@ include 'conn.php';
                         <td><?php echo $suplier['telp'] ?></td>
                         <td>
                             <a href="" class="btn btn-warning">Edit</a>
-                            <a href="" class="btn btn-danger">Hapus</a>
+                            <a href="hapus.php?dHapus=<?php echo $suplier['id_suplier'] ?>" class="btn btn-danger">Hapus</a>
+                            <a href="detail.php?dDetail=<?php echo $suplier['id_suplier'] ?>" class="btn btn-success">Detail</a>
                         </td>
 
                     </tr>
