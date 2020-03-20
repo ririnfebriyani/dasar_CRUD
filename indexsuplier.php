@@ -20,7 +20,7 @@ include 'conn.php';
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Id Suplier</th>
-                    <th scope="col">Nama Supier</th>
+                    <th scope="col">Nama Suplier</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Telp</th>
                     <th scope="col">Aksi</th>
@@ -42,10 +42,11 @@ include 'conn.php';
                         <td><?php echo $suplier['nama_suplier'] ?></td>
                         <td><?php echo $suplier['alamat'] ?></td>
                         <td><?php echo $suplier['telp'] ?></td>
-                        <td>
-                            <a href="" class="btn btn-warning">Edit</a>
+                        <td width="230px">
+                            <a href="edit.php?dEdit=<?php echo $suplier['id_suplier'] ?>" class="btn btn-warning">Edit</a>
                             <a href="hapus.php?dHapus=<?php echo $suplier['id_suplier'] ?>" class="btn btn-danger">Hapus</a>
                             <a href="detail.php?dDetail=<?php echo $suplier['id_suplier'] ?>" class="btn btn-success">Detail</a>
+
                         </td>
 
                     </tr>
